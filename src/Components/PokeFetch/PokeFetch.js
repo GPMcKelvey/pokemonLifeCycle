@@ -9,7 +9,7 @@ class PokeFetch extends Component {
       pokeInfo: '',
       pokeSprite: '',
       pokeName: '',
-      timer: 11,
+      timer: 10,
       start: false
     }
   }
