@@ -15,19 +15,19 @@ class PokeFetch extends Component {
   }
 
   componentDidMount = () => {
-    console.log('I mount here');
+    console.log('mount');
     this.fetchPokemon();
   }
 
   componentDidUpdate = (prevProps, prevState) => {
-    console.log('I update here');
+    console.log('update');
     if (prevState.start === this.state.start) {return} else {setInterval(() => this.decrement(), 1000)};
     console.log(this.state.start);
     this.revealPokemon();
   }
 
   // componentWillUnmount = () => {
-  //   console.log("I unmount here!");
+  //   console.log('unmount');
   //   this.fetchPokemon();
   //   this.setState({
   //     start: false
